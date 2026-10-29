@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7주차 예제 3 · 위아래 마진은 겹쳐서 큰 쪽만 남습니다</title>
+  <style>
+    /*
+    7주차 예제 3 — 위아래 마진은 겹쳐서 큰 쪽만 남습니다
+    */
+    .a { margin-bottom: 30px; }
+    .b { margin-top: 20px; }
+
+    /* .a와 .b 사이 간격은 50px이 아니라 30px입니다.
+       위아래(수직) 마진끼리는 겹칩니다 — 좌우는 겹치지 않습니다.
+       "왜 여백이 생각보다 좁지?" 할 때 이걸 의심하세요. */
+  </style>
+</head>
+<body>
+  <h1>제목 h1</h1>
+  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
+  <ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+  </ul>
+  <div class="box">div.box</div>
+  <button>버튼</button>
+</body>
+</html>

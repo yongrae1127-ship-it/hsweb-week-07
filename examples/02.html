@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7주차 예제 2 · width에 padding이 포함될까?</title>
+  <style>
+    /*
+    7주차 예제 2 — width에 padding이 포함될까?
+    */
+    /* 기본값(content-box) — width는 "내용"의 폭 */
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 1px solid;
+    }
+    /* 실제 차지하는 폭 = 200 + 20 + 20 + 1 + 1 = 242px  */
+
+
+    /* border-box — width는 "테두리까지"의 폭 */
+    * { box-sizing: border-box; }
+    /* 실제 차지하는 폭 = 200px  ✓ 생각한 대로 */
+  </style>
+</head>
+<body>
+  <h1>제목 h1</h1>
+  <p class="intro">문단 p — 위에 작성한 CSS가 이 견본 문서에 적용됩니다.</p>
+  <ul>
+    <li>목록 1</li>
+    <li>목록 2</li>
+    <li>목록 3</li>
+  </ul>
+  <div class="box">div.box</div>
+  <button>버튼</button>
+</body>
+</html>
